@@ -36,10 +36,10 @@ export default function Navbar() {
   </button>
   {openPrice && (
     <ul className="absolute bg-white shadow-md p-2 mt-2 rounded z-10">
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 1</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 2</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 3</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 4</a></li>
+      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Home Calculator</a></li>
+      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Kitchen Calculator</a></li>
+      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Wardrope Calculator</a></li>
+      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Kids Calculator</a></li>
     </ul>
   )}
 </li>
@@ -95,10 +95,10 @@ export default function Navbar() {
   </button>
   {openPrice && (
     <ul className="pl-4">
-     <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 1</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg -gray-100">Option 2</a></li>    
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 3</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Option 4</a></li> 
+     <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Home Calculator</a></li>
+      <li><a href="#" className="block px-4 py-2 hover:bg -gray-100">Kitchen Calculator</a></li>    
+      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Wardrope Calculator</a></li>
+      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Kids Calculator</a></li> 
     </ul>
   )}
 </li>

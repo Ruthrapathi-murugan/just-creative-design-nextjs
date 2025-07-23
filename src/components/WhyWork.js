@@ -43,7 +43,8 @@ export default function WhyWork() {
         Why Work with JustCreativeDesigns?
       </h2>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto" >
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto justify-items-center">
+
         {features.map((item, idx) => (
           <div
             key={idx}
