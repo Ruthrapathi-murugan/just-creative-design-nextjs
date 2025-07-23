@@ -53,7 +53,9 @@
   background-color: white;
   border-top: 2px solid #ddd; /* ✅ Border between sections */
   flex-wrap: wrap;
+  margin-bottom: 1px ; ;
 }
+
 
 .stat {
   width: 33.33%;
