@@ -28,7 +28,7 @@ We are based in Bangalore and specialize in home interior design that blends aes
         <h2>2L+ SF</h2>
         <p>Year of crafting-Space</p>
       </div>
-      <div className={styles.stat}>
+      <div className={styles.stat} style={{paddingLeft:"10px",paddingTop:"18px"}}>
         <h2>4.8 </h2>
         <p>Rating</p>
       </div>

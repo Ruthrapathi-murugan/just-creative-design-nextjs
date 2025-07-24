@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import styles from "./ImageSlider.module.css";
 
 const images = [
-  "/slider1.jpg",
-  "/slider2.jpg",
   "/slider3.jpg",
+  "/slider2.jpg",
+  "/slider1.jpg",
   "/slider4.jpg",
 ];
 

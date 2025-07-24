@@ -6,17 +6,18 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-sm text-gray-600">
+    <footer className="bg-white border-t text-[8px] sm:text-xs md:text-sm">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-6 flex flex-wrap items-start justify-between gap-y-6">
+
         {/* Logo */}
-        <div className="flex flex-col items-start">
+        <div className="flex-shrink-0 w-[60px] sm:w-[90px] lg:w-[120px] mb-4">
           <Image src="/logo.png" alt="Just Creative Designs" width={120} height={50} />
         </div>
 
         {/* Shop By */}
-        <div>
-          <h3 className="font-semibold text-black mb-4">Shop By</h3>
-          <ul className="space-y-2">
+        <div className="flex flex-col min-w-[50px]" style={{color: "black"} }>
+          <h3 className="font-semibold text-black mb-2">Shop By</h3>
+          <ul className="space-y-1">
             <li><Link href="#">Wardrobe</Link></li>
             <li><Link href="#">Kitchen</Link></li>
             <li><Link href="#">Kids</Link></li>
@@ -25,9 +26,9 @@ export default function Footer() {
         </div>
 
         {/* Company */}
-        <div>
-          <h3 className="font-semibold text-black mb-4">Company</h3>
-          <ul className="space-y-2">
+        <div className="flex flex-col min-w-[50px]" style={{color: "black"} }>
+          <h3 className="font-semibold text-black mb-2">Company</h3>
+          <ul className="space-y-1">
             <li><Link href="#">About us</Link></li>
             <li><Link href="#">Our Service</Link></li>
             <li><Link href="#">Customers</Link></li>
@@ -36,33 +37,39 @@ export default function Footer() {
         </div>
 
         {/* Get Help */}
-        <div>
-          <h3 className="font-semibold text-black mb-4">Get Help</h3>
-          <ul className="space-y-2">
+        <div className="flex flex-col min-w-[60px]">
+          <h3 className="font-semibold text-black mb-2">Get Help</h3>
+          <ul className="space-y-1" style={{color: "black"} }>
             <li><Link href="#">FAQ</Link></li>
-            <li><Link href="#">Contact us</Link></li>
           </ul>
         </div>
+        {/* Contact us */}
+       <div className="hidden lg:flex flex-col min-w-[100px]">
+  <h3 className="font-semibold text-black mb-2">Contact us</h3>
+  <ul className="space-y-1" style={{ color: "black" }}>
+    <li><Link href="#">Info@justcreativedesigns.in</Link></li>
+    <li><Link href="#">+91- 8884456466</Link></li>
+    <li><Link href="#">Instagram</Link></li>
+  </ul>
+</div>
 
-        {/* Contact Us & Social */}
-        <div>
-          <h3 className="font-semibold text-black mb-4">Contact Us</h3>
-          <ul className="space-y-2">
-            <li>Email: <Link href="mailto:info@justcreativedesigns.in">info@justcreativedesigns.in</Link></li>
-            <li>Call: <Link href="tel:+918884456466">+91- 8884456466</Link></li>
-          </ul>
-          <div className="flex mt-4 space-x-4">
-            <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black text-xl">
-              <FaLinkedin />
-            </Link>
-            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black text-xl">
-              <FaInstagram />
-            </Link>
-          </div>
-        </div>
+
+        {/* Social Icons */}
+       <div className="flex flex-col min-w-[100px] block lg:hidden" style={{ color: "black" }}>
+  <h3 className="font-semibold text-black mb-2">Follow US</h3>
+  <div className="flex space-x-3">
+    <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border flex items-center justify-center text-sm sm:text-base text-gray-700 hover:text-black">
+      <FaLinkedin />
+    </Link>
+    <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border flex items-center justify-center text-sm sm:text-base text-gray-700 hover:text-black">
+      <FaInstagram />
+    </Link>
+  </div>
+</div>
+
       </div>
 
-      <div className="border-t text-center py-6 text-xs text-gray-500">
+      <div className="border-t text-center py-4 sm:py-6 text-[9px] sm:text-xs md:text-sm text-gray-500">
         © Copyright 2025 JustCreateDesign — All Rights Reserved.
       </div>
     </footer>
