@@ -10,19 +10,23 @@
   color: #222;
 }
 .intro h6 {
-  font-size: 1.5rem;
+ font-size: 24px;
+  font-weight: 700;
   margin-bottom: 15px;
-  color: #333;
+  color: #000;
 }
 
 .intro p {
-  font-size: 1rem;
-  color: #555;
+  font-family: Helvetica Neue;
+  font-size: 21px;
+  font-weight: 400;
+  color: #4b5768;
   line-height: 1.8;
 }
 
 .buttons {
-  margin-top: 30px;
+  margin-top: 20px;
+ 
 }
 
 .primary {
@@ -51,9 +55,8 @@
   align-items: center;
   padding: 40px 40px;
   background-color: white;
-  border-top: 2px solid #ddd; /* ✅ Border between sections */
   flex-wrap: wrap;
-  margin-bottom: 1px ; ;
+/* ✅ Margin to separate from next section */;
 }
 
 
@@ -71,4 +74,49 @@
 .stat p {
   font-size: 1rem;
   color: #555;
+}
+
+/* Tablet Responsive (768px and below) */
+@media (max-width: 768px) {
+}
+
+/* Mobile Responsive (480px and below) */
+@media (max-width: 480px) {
+  .intro {
+    padding: 30px 15px;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .intro h6 {
+    font-size: 15px;
+  }
+
+  .intro p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .primary, .secondary {
+    width: 100%;
+    margin: 10px 1px;
+    font-size: 13px;
+  
+  }
+
+  .statsRow {
+    padding: 20px 10px;
+  }
+
+  .stat h2 {
+    font-size: 1.0  em;
+  }
+
+  .stat p {
+    font-size: 0.9rem;
+  
+}
 }

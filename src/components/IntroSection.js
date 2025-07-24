@@ -5,7 +5,7 @@ export default function IntroSection() {
   return (
     <>
     <section className={styles.intro}>
-      <h2>Your Dream Home Starts Here</h2>
+      <h2 style={{fontFamily:"Helvetica Neue"}}>Your Dream Home Starts Here</h2>
       <h6>Welcome to Just Creative Designs –Best Interior Design Company in Bangalore</h6>
 
       <p>
@@ -15,7 +15,7 @@ export default function IntroSection() {
 We are based in Bangalore and specialize in home interior design that blends aesthetics and usability. Only smart designs that feel cozy, homey, and totally. you.
               </span></p>
       <div className={styles.buttons}>
-        <button className={styles.primary}>Book Consultation</button>
+        <button className={styles.primary}>Book a Free Consultation Call</button>
         <button className={styles.secondary}>Get a free Quote</button>
       </div>
     </section>

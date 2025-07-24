@@ -29,23 +29,22 @@ export default function WhoWeDesignFor() {
 
   return (
     <section className="py-16 px-6 bg-white text-gray-800">
-           <h2 className="text-3xl font-bold mb-4">Who We Design For</h2>
-           <p className="text-gray-600 max-w-3xl  mb-10">
-          At Just Creative Designs, we understand that every home tells a different story. That’s why our interior
-          design services are tailored to fit different needs, styles, and stages of life:
-        </p>
+      <h2 className="text-3xl font-bold mb-4">Who We Design For</h2>
+      <p className="text-gray-600 max-w-3xl mb-10">
+        At Just Creative Designs, we understand that every home tells a different story. That’s why our interior
+        design services are tailored to fit different needs, styles, and stages of life:
+      </p>
 
       <div className="max-w-6xl mx-auto">
-   
-        
-        <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-2">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2">
           {categories.map((cat, i) => (
             <div
               key={i}
-              className="flex flex-col items-start p-6 border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+              className={`flex flex-col items-start p-6 border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow duration-300
+              ${i === categories.length - 1 && categories.length % 2 !== 0 ? 'sm:col-span-2 sm:mx-auto sm:max-w-md' : ''}`}
             >
-              <div className="mb-4 bg-rose-100 p-5 rounded-full">
-                <img src={cat.icon} alt={`${cat.title} icon`} className="w-9 h-10" />
+              <div className="mb-4 bg-rose-100 p-1 rounded-full">
+                <img src={cat.icon} alt={`${cat.title} icon`} className="w-14 h-15" />
               </div>
               <h3 className="text-lg font-semibold mb-2">{cat.title}</h3>
               <p className="text-sm text-gray-600">{cat.desc}</p>

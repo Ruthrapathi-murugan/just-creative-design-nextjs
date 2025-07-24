@@ -43,16 +43,17 @@ export default function WhyWork() {
         Why Work with JustCreativeDesigns?
       </h2>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto justify-items-center">
+      <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-3 auto-rows-auto
+                                      max-w-6xl mx-auto justify-items-center">
 
         {features.map((item, idx) => (
           <div
             key={idx}
             className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition hover:shadow-md"
            style={{color:"black"}}>
-            <div className="flex items-start space-x-4" > 
-              <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center shrink-0">
-                <img src={item.icon} alt={item.title} className="w-10 h-10" style={{color:"black"}} />
+            <div className="flex items-start space-x-3" > 
+              <div className="w-15 h-15 p-1 bg-pink-100 rounded-full flex items-center justify-center shrink-0">
+                <img src={item.icon} alt={item.title} className="w-15 h-15" style={{color:"black"}} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
