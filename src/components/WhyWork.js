@@ -44,7 +44,7 @@ export default function WhyWork() {
       </h2>
 
       <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-3 auto-rows-auto
-                                      max-w-6xl mx-auto justify-items-center">
+                                      max-w-6xl mx-auto justify-items-center flex justify-center">
 
         {features.map((item, idx) => (
           <div

@@ -20,15 +20,15 @@ We are based in Bangalore and specialize in home interior design that blends aes
       </div>
     </section>
      <div className={styles.statsRow} >
-      <div className={styles.stat} style={{paddingLeft:"10px",paddingTop:"18px"}}>
+      <div className={styles.stat}>
         <h2>100+</h2>
         <p>Project Completed</p>
       </div>
-      <div className={styles.stat} style={{paddingLeft:"10px",paddingTop:"18px"}}>
+      <div className={styles.stat} >
         <h2>2L+ SF</h2>
         <p>Year of crafting-Space</p>
       </div>
-      <div className={styles.stat} style={{paddingLeft:"10px",paddingTop:"18px"}}>
+      <div className={styles.stat} >
         <h2>4.8 </h2>
         <p>Rating</p>
       </div>

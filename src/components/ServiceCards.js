@@ -8,7 +8,7 @@ const services = [
     buttonText: "Discover more",
   },
   {
-    title: "Your Perfect Wardrobe, Tailored by Us",
+    title: " Your Perfect Wardrobe Design,Tailored by Us",
     description: "From luxurious walk-ins to sleek storage solutions, see how we can make your wardrobe dreams a reality.",
     image: "./slider2.jpg",
     buttonText: "Discover more",
