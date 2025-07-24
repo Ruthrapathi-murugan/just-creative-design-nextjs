@@ -36,7 +36,7 @@ export default function ImageSlider() {
         />
       </div>
 
-      <div className={styles.dots}>
+      <div className={styles.dots} style={{padding: "20px"}}>
         {images.map((_, index) => (
           <span
             key={index}

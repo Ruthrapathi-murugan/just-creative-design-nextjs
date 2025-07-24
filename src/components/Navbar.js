@@ -20,7 +20,6 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 font-medium" style={{color:"black"}}>
-          <li><a href="#" className="hover:text-gray-600">Home</a></li>
           <li><a href="#" className="hover:text-gray-600">Project</a></li>
 
         {/* Dropdown: Price Calculator */}
@@ -63,8 +62,8 @@ export default function Navbar() {
     </ul>
   )}
 </li>
-
-
+<li><a href="#" className="hover:text-gray-600">Material</a></li>
+ <li><a href="#" className="hover:text-gray-600">About</a></li>
           <li><a href="#" className="hover:text-gray-600">Contact us</a></li>
         </ul>
 

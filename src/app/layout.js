@@ -7,6 +7,12 @@ import Services from '@/components/Services';
 import WhyWork from '@/components/WhyWork';
 import ImageComparison from '@/components/ImageComparison';
 import WhoWeDesignFor from '@/components/WhoWeDesignFor';
+import TailoredDesign from '@/components/TailoredDesign';
+import ServiceCards from '@/components/ServiceCards';
+import TestimonialCarousel from '@/components/TestimonialCarousel';
+import FAQAccordion from '@/components/FAQAccordion';
+import Footer from '@/components/Footer';
+
 
 export default function RootLayout({ children }) {
   return (
@@ -28,7 +34,7 @@ export default function RootLayout({ children }) {
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://yourdomain.com" />
+    
       </head>
       <body>
         <Navbar />
@@ -38,6 +44,11 @@ export default function RootLayout({ children }) {
         <WhyWork />
         <ImageComparison/>
         <WhoWeDesignFor/>
+        <TailoredDesign />
+       <ServiceCards/>
+       <TestimonialCarousel/>
+       <FAQAccordion/>
+       <Footer/>
         <main>{children}</main>
       </body>
     </html>
