@@ -5,7 +5,7 @@ export default function IntroSection() {
   return (
     <>
     <section className={styles.intro}>
-      <h2 style={{fontFamily:"Helvetica Neue"}}>Your Dream Home Starts Here</h2>
+      <h2 style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',}}>Your Dream Home Starts Here</h2>
       <h6>Welcome to Just Creative Designs –Best Interior Design Company in Bangalore</h6>
 
       <p>

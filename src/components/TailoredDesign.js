@@ -5,17 +5,17 @@ import Marquee from "react-fast-marquee";
 export default function TailoredDesign() {
   return (
     <section className="bg-white text-gray-800">
-      <div className="max-w-6xl mx-auto px-4 py-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <div className="max-w-6xl mx-auto px-1 py-12" style={{padding:"10px 30px"}}>
+        <h2 className="text-3xl text-left md:text-4xl font-bold mb-4" style={{fontFamily:"Helvetica Neue",fontSize:"32px",fontWeight:"400",color:"#333"}}>
           Tailored Design Solutions For Every Corner Of Your Home
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+        <p className="text-gray-600 text-left text-lg">
           From the first sketch to the final touch, our expert team ensures your vision is brought to life with beautifully-designed,
           functional spaces that you’ll love coming home to every day.
         </p>
 
         {/* Image */}
-        <div className="mt-10 rounded-md overflow-hidden shadow-md">
+        <div className="mt-10 rounded-md overflow-hidden shadow-md" >
           <img
             src="./slider3.jpg"
             alt="Beautiful interior space"

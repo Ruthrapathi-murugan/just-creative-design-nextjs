@@ -58,9 +58,10 @@ export default function Services() {
   };
 
   return (
-    <section className="px-4 py-12" style={{ backgroundColor: "white"}}>
+    <section className="px-4 py-12 border-t border-gray-300" style={{ backgroundColor: "white",padding:"40px 40px"}}>
+
       <div className="text-center mb-8">
-        <h2 className="text-2xl md:text-3xl font-semibold" style={{color:"black" ,fontFamily:"Helvetica Neue",display:"flex",flexDirection:"initial"}}>Services We Offer</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold" style={{color:"black" ,fontFamily:"Helvetica Neue",display:"flex",flexDirection:"initial",fontWeight:"400"}}>Services We Offer</h2>
         <p className="mt-2 lg:text-2xl  text-gray-600 md:text-xl " style={{fontFamily:"Helvetica Neue",textAlign:"justify"}}>
           We create smart, attractive places that are actually functional for everyday living—
           whether you require additional storage, eye-catching decorations or a smooth flow

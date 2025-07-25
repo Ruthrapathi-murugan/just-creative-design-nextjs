@@ -56,12 +56,12 @@ export default function FAQAccordion() {
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
+ 
   return (
-    <div className="bg-gray-50 text-gray-800">
+    <div className="bg-gray-50 text-gray-800"style={{ backgroundColor: 'white',color: 'black' }}>
     <section className="max-w-6xl mx-auto px-4 py-16" style={{ backgroundColor: 'white',color: 'black' }}>
       <h2 className="text-4xl font-semibold mb-8 " >FAQ</h2>
-      <div className="space-y-4">
+      <div className="space-y-3">
         {faqData.map((item, index) => (
           <div key={index} className="border border-gray-200 rounded-lg">
             <button

@@ -10,12 +10,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-6 flex flex-wrap items-start justify-between gap-y-6">
 
         {/* Logo */}
-        <div className="flex-shrink-0 w-[60px] sm:w-[90px] lg:w-[120px] mb-4">
+        <div className="flex-shrink-0 w-[40px] sm:w-[90px] py-6 lg:w-[120px] mb-4">
           <Image src="/logo.png" alt="Just Creative Designs" width={120} height={50} />
         </div>
 
         {/* Shop By */}
-        <div className="flex flex-col min-w-[50px]" style={{color: "black"} }>
+        <div className="flex flex-col min-w-[40px]" style={{color: "black"} }>
           <h3 className="font-semibold text-black mb-2">Shop By</h3>
           <ul className="space-y-1">
             <li><Link href="#">Wardrobe</Link></li>
@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
 
         {/* Company */}
-        <div className="flex flex-col min-w-[50px]" style={{color: "black"} }>
+        <div className="flex flex-col min-w-[40px]" style={{color: "black"} }>
           <h3 className="font-semibold text-black mb-2">Company</h3>
           <ul className="space-y-1">
             <li><Link href="#">About us</Link></li>
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         {/* Get Help */}
-        <div className="flex flex-col min-w-[60px]">
+        <div className="flex flex-col min-w-[40px]">
           <h3 className="font-semibold text-black mb-2">Get Help</h3>
           <ul className="space-y-1" style={{color: "black"} }>
             <li><Link href="#">FAQ</Link></li>

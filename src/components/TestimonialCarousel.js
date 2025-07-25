@@ -52,7 +52,7 @@ export default function TestimonialCarousel() {
           Don’t just take our word for it—hear from the clients whose homes we’ve transformed.
         </p>
 
-        <div className="max-w-4xl mx-auto relative">
+        <div className="max-w-3xl mx-auto relative mt-12 p-0">
           <Swiper
             modules={[Navigation, Pagination]}
             pagination={{ clickable: true }}
@@ -63,37 +63,44 @@ export default function TestimonialCarousel() {
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
-                <div className="relative flex flex-col md:flex-row items-center bg-white shadow-lg rounded-xl p-6">
-                  {/* Left Arrow */}
-                  <button
-                    ref={prevRef}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 rounded-full p-2 hover:bg-gray-300 transition z-10"
-                  >
-                    <ChevronLeft />
-                  </button>
+                <div className="relative flex flex-wrap items-center bg-white shadow-lg rounded-xl p-4 sm:p-6">
+  {/* Left Arrow */}
+  <button
+    ref={prevRef}
+    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 rounded-full p-2 hover:bg-gray-300 transition z-10"
+  >
+    <ChevronLeft />
+  </button>
 
-                  {/* Right Arrow */}
-                  <button
-                    ref={nextRef}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 rounded-full p-2 hover:bg-gray-300 transition z-10"
-                  >
-                    <ChevronRight />
-                  </button>
+  {/* Right Arrow */}
+  <button
+    ref={nextRef}
+    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-700 rounded-full p-2 hover:bg-gray-300 transition z-10"
+  >
+    <ChevronRight />
+  </button>
 
-                  <div className="w-full md:w-1/2 mb-4 md:mb-0 md:mr-6 text-center">
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      width={300}
-                      height={400}
-                      className="rounded-lg object-cover mx-auto"
-                    />
-                    <h4 className="font-medium mt-4 text-black">{testimonial.name}</h4>
-                  </div>
-                  <div className="w-full md:w-1/2 text-left">
-                    <p className="text-gray-700">{testimonial.text}</p>
-                  </div>
-                </div>
+  {/* Image Section */}
+  <div className="relative w-1/2 min-w-[150px] aspect-[3/4] p-2">
+    <Image
+      src={testimonial.image}
+      alt={testimonial.name}
+      fill
+      className="rounded-lg object-cover"
+      sizes="(max-width: 768px) 50vw, 300px"
+    />
+    <h4 className="font-medium mt-4 text-black text-center text-sm sm:text-base">{testimonial.name}</h4>
+  </div>
+
+  {/* Text Section */}
+  <div className="w-1/2 min-w-[150px] p-2 text-left">
+    <p className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg">
+  {testimonial.text}
+</p>
+
+  </div>
+</div>
+
               </SwiperSlide>
             ))}
           </Swiper>
