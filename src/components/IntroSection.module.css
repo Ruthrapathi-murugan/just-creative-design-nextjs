@@ -8,11 +8,15 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #222;
+  padding-bottom: 0px;
 }
 .intro h6 {
- font-size: 24px;
+  padding-top: 0px;
+ font-size: 18px;
   font-weight: 700;
+
   margin-bottom: 15px;
+  letter-spacing: 0;
   color: #000;
 }
 
@@ -43,7 +47,7 @@
   padding: 10px 10px;
   background-color: transparent;
   color: #000;
-  border: 2px solid #000;
+  border: 1px solid #000;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -67,7 +71,7 @@
 
 .stat h2 {
   font-size: 2rem;
-  margin-bottom: 8px;
+  
   color: #222;
 }
 
@@ -79,25 +83,30 @@
 /* Tablet Responsive (768px and below) */
 @media (max-width: 768px) {
 
+  .intro{
+padding-top: 20px;
+
+  }
   .intro h2{
     font-size: 1.5rem;
       color: #000;
-
+        margin-bottom: 0px;
+    
   }
 
 .intro h6 {
- font-size: 18px;
+ font-size: 16px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   color: #000;
 }
 
 
 .intro p {
-  
-line-height: 1;
+  text-align: justify;
   font-size: 18px;
-
+  font-family: Helvetica;
+  color: #4b5768;
 }
 
   .statsRow {
@@ -125,63 +134,77 @@ line-height: 1;
 /* Mobile Responsive (480px and below) */
 @media (max-width: 480px) {
   .intro {
-    padding: 30px 15px;
+    padding: 1px 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+
   }
 
   .intro h2 {
-    font-size: 1.5rem;
-    font-weight: 800;
-      color: #000;
+    font-size: 19px;
+    font-family:Helvetica Neue;
+    
+  
   }
 
   .intro h6 {
-    font-size: 13px;
+    font-size: 12px;
+    font-family: Helvetica Neue;
+    font-weight: bold;
+
   }
 
   .intro p {
     font-size: 10px;
     line-height: 1.5;
-    justify-content: flex-start;
+    
+    font-family: Helvetica Neue;
+    color: #4b5768;
+
   }
 
-   .primary{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 10px 1px;
-    font-size: 13px;
+ .buttons {
+  flex-direction: row; /* Make buttons in a row */
+  justify-content: space-between; /* Add space between buttons */
+  flex-wrap: wrap; /* Allow wrapping if space is not enough */
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
 
+.primary, .secondary {
+  flex: 1 1 48%; /* Allow buttons to shrink and take 48% width */
+  margin: 1px 1%;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Roboto;
+  padding-bottom: 10px;
 
-   }
-  .secondary {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 10px 1px;
-    font-size: 13px;
-  
-  }
+}
+
+.stat{
+   width: 32%;
+   padding: 0px;
+   
+}
 
   .statsRow {
-    padding: 20px 20px;
+
+    
   }
 
   .stat h2 {
-    font-size: 30px;
-    padding-top:20px;
-    gap:10px;
+    font-size: 20px;
+    padding: 0%;
+  
+  
   }
 
   .stat p {
     font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    padding-bottom: 20px;  
+    padding: 0%;
+
+  
+  
   
 }
 }

@@ -7,7 +7,7 @@ const CompareImage = dynamic(() => import('react-compare-image'), { ssr: false }
 
 export default function ImageComparison() {
   return (
-    <div className="min-h-screen flex flex-col justify-center bg-white px-6 py-16">
+    <div className="min-h-screen flex flex-col justify-center bg-white px-6 py-16 pb-0 md:pb-0">
     
       <h1
         className="text-3xl md:text-4xl font-bold mb-4"

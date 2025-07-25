@@ -16,7 +16,7 @@ We are based in Bangalore and specialize in home interior design that blends aes
               </span></p>
       <div className={styles.buttons}>
         <button className={styles.primary}>Book a Free Consultation Call</button>
-        <button className={styles.secondary}>Get a free Quote</button>
+        <button className={styles.secondary}>Get A free Quote</button>
       </div>
     </section>
      <div className={styles.statsRow} >
