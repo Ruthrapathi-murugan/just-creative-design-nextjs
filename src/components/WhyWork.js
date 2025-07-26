@@ -45,7 +45,7 @@ export default function WhyWork() {
 
       {/* First Row - 3 Cards */}
     {/* First Row - 3 Cards on Desktop, 1 Card per Row on Tablets/Mobile */}
-<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8 px-4">
+<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-9 px-4">
   {features.slice(0, 3).map((item, idx) => (
     <div
       key={idx}
@@ -57,11 +57,11 @@ export default function WhyWork() {
           <img src={item.icon} alt={item.title} className="w-15 h-15" />
         </div>
         <div>
-          <h3 className="text-base text-[18px]  sm:text-lg md:text-xl lg:text-[24px] mb-4 font-helvetica">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3 px-2 py-2">
   {item.title}
 </h3>
 
-          <p className="text-sm text-gray-600" style={{fontFamily:"Helvetica Neue", fontSize:"18px"}}>{item.description}</p>
+          <p className="text-sm sm:text-base text-gray-600  px-2">{item.description}</p>
         </div>
       </div>
     </div>
@@ -81,10 +81,10 @@ export default function WhyWork() {
           <img src={item.icon} alt={item.title} className="w-15 h-15" />
         </div>
         <div>
-          <h3 className="text-base sm:text-lg md:text-xl lg:text-[24px] mb-4 font-helvetica">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3 px-2 py-2">
   {item.title}
 </h3>
-          <p className="text-sm text-gray-600" style={{fontFamily:"Helvetica Neue", fontSize:"18px"}}>{item.description}</p>
+          <p className="text-sm sm:text-base text-gray-600 px-2 ">{item.description}</p>
         </div>
       </div>
     </div>

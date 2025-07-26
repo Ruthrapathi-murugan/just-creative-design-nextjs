@@ -45,10 +45,10 @@ export default function TestimonialCarousel() {
   return (
     <>
       <section className="py-16 bg-white text-center relative">
-        <h2 className="text-3xl font-semibold mb-2" style={{ color: 'black' }}>
+        <h2 className="text-2xl text-left mb-2 px-8 lg:text-[40px] sm:text-[24px]" style={{ color: 'black' }}>
           Trusted by 100+ homeowners just like you
         </h2>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl text-left mb-8 px-8">
           Don’t just take our word for it—hear from the clients whose homes we’ve transformed.
         </p>
 
@@ -82,7 +82,7 @@ export default function TestimonialCarousel() {
 
   {/* Image Section */}
   {/* Image Section */}
-<div className="flex flex-col items-center w-1/3 min-w-[150px] p-4">
+<div className="flex flex-col items-center w-1/3 min-w-[150px]">
   <div className="relative w-full aspect-[2/3]">
     <Image
       src={testimonial.image}
@@ -99,17 +99,14 @@ export default function TestimonialCarousel() {
 
 
   {/* Text Section */}
-  <div className="w-1/2 min-w-[150px] p-2 text-center">
+  <div className="w-1/2 min-w-[180px] p-2 text-left">
     <p className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg">
   {testimonial.text}
 </p>
-
   </div>
 </div>
-
               </SwiperSlide>
             ))}
-          
           </Swiper>
         </div>
       </section>

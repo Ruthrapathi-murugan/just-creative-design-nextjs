@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 const services = [
   {
     title: "Living Room Interior Design",
-    image: "/slider1.jpg",
+    image: "/Living Room Interior Design.jpg",
   },
   {
     title: "Modular Kitchen Design & Layout",
@@ -19,15 +19,19 @@ const services = [
   },
   {
     title: "Color & Lighting Planning",
-    image: "/slider3.jpg",
+    image: "/Color & Lighting Planning.jpg",
   },
   {
     title: "Bedroom Interior Design",
-    image: "/slider4.jpg",
+    image: "/slider3.jpg",
   },
   {
-    title: "Workspace Design",
-    image: "/slider4.jpg",
+    title: "Wardrobe Design",
+    image: "/Wardrobes & Storage Solutions.jpg",
+  },
+  {
+    title: "Kids Room Design",
+    image: "/kidsbed.jpg",
   },
 ];
 
@@ -65,7 +69,7 @@ export default function Services() {
   Service We Offer
 </h2>
 
-        <p className="mt-2 lg:text-2xl  text-gray-600 md:text-xl py-2 px-4" style={{fontFamily:"Helvetica Neue",textAlign:"justify"}}>
+        <p className="text-base sm:text-lg text-gray-600 mb-9 px-4">
           We create smart, attractive places that are actually functional for everyday living—
           whether you require additional storage, eye-catching decorations or a smooth flow
           throughout your house.

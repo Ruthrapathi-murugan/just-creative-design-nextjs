@@ -22,7 +22,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 font-medium" style={{color:"black", fontFamily:"Helvetica Neue",fontSize:"18px"}}>
+        <ul className="hidden md:flex space-x-6 font-medium" style={{color:"black",fontSize:"18px"}}>
           <li><a href="#" className="hover:text-gray-600">Project</a></li>
 
         {/* Dropdown: Price Calculator */}

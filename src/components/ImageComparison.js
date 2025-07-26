@@ -9,9 +9,10 @@ export default function ImageComparison() {
   return (
     <div className="min-h-screen flex flex-col justify-center bg-white px-6 py-16 pb-0 md:pb-0" >
     
- <h1 className="text-[22px] font-bold sm:text-xl py-4 md:text-2xl lg:text-[2.5rem] font-normal mb-2 text-[#222] font-helvetica px-4" >
-  Design That Understands You
-</h1>
+ <h1 className="text-2xl sm:text-3xl md:text-2xl lg:text-[2.5rem]  mb-2 text-[#222] font-helvetica px-4 py-4">
+    Design That Understands You
+  </h1>
+
 
       
 
