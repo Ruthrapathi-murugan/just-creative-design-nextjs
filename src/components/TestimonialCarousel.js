@@ -82,7 +82,7 @@ export default function TestimonialCarousel() {
 
   {/* Image Section */}
   {/* Image Section */}
-<div className="flex flex-col items-center w-1/3 min-w-[150px]">
+<div className="flex flex-col items-center w-full sm:w-1/3 md:w-1/4 container-3xl-40rem lg:w-1/3 min-w-[150px] ">
   <div className="relative w-full aspect-[2/3]">
     <Image
       src={testimonial.image}
