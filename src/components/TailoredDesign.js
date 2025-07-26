@@ -4,15 +4,19 @@ import Marquee from "react-fast-marquee";
 
 export default function TailoredDesign() {
   return (
-    <section className="bg-white text-gray-800">
-      <div className="max-w-6xl mx-auto px-1 py-12" style={{padding:"10px 30px"}}>
-        <h2 className="text-3xl text-left md:text-4xl font-bold mb-4" style={{fontFamily:"Helvetica Neue",fontSize:"32px",fontWeight:"400",color:"#333"}}>
-          Tailored Design Solutions For Every Corner Of Your Home
-        </h2>
-        <p className="text-gray-600 text-left text-lg">
+    <>
+    <section className="bg-white text-gray-800 px-4 py-10" >
+         <h2 className="text-[19px] sm:text-xl md:text-2xl lg:text-[2rem] font-bold sm:font-semibold lg:font-normal mb-2 text-[#222] font-helvetica px-4">
+  Tailored Design Solutions For Every Corner Of Your Home
+</h2>
+ <p className="text-gray-600 text-left text-lg px-4">
           From the first sketch to the final touch, our expert team ensures your vision is brought to life with beautifully-designed,
           functional spaces that you’ll love coming home to every day.
         </p>
+      <div className="max-w-5xl mx-auto px-1 py-10" >
+     
+
+       
 
         {/* Image */}
         <div className="mt-10 rounded-md overflow-hidden shadow-md" >
@@ -25,7 +29,9 @@ export default function TailoredDesign() {
       </div>
 
       {/* Specialization bar */}
-      <div className="bg-black text-white py-6">
+     
+    </section>
+     <div className="bg-black text-white py-6">
       <h2 className="text-center text-4xl font-semibold mb-2">We specialize in</h2>
       
       <Marquee gradient={false} speed={50} pauseOnHover={true}>
@@ -47,6 +53,6 @@ export default function TailoredDesign() {
        </div>
       </Marquee>
     </div>
-    </section>
+    </>
   );
 }

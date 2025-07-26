@@ -58,11 +58,14 @@ export default function Services() {
   };
 
   return (
-    <section className="px-4 py-12 border-t border-gray-300" style={{ backgroundColor: "white",padding:"40px 40px"}}>
+    <section className="px-4 py-12 border-t border-gray-300" style={{ backgroundColor: "white"}}>
 
-      <div className="text-center mb-8">
-        <h2 className="text-2xl md:text-3xl font-semibold" style={{color:"black" ,fontFamily:"Helvetica Neue",display:"flex",flexDirection:"initial",fontWeight:"400"}}>Services We Offer</h2>
-        <p className="mt-2 lg:text-2xl  text-gray-600 md:text-xl " style={{fontFamily:"Helvetica Neue",textAlign:"justify"}}>
+      <div className="b-8">
+<h2 className="text-[19px] sm:text-xl md:text-2xl lg:text-[2.5rem] font-normal mb-2 text-[#222] font-helvetica px-4">
+  Service We Offer
+</h2>
+
+        <p className="mt-2 lg:text-2xl  text-gray-600 md:text-xl py-2 px-4" style={{fontFamily:"Helvetica Neue",textAlign:"justify"}}>
           We create smart, attractive places that are actually functional for everyday living—
           whether you require additional storage, eye-catching decorations or a smooth flow
           throughout your house.
@@ -71,7 +74,7 @@ export default function Services() {
 
       <Slider {...settings}>
         {services.map((service, index) => (
-          <div key={index} className="px-2">
+          <div key={index} className="py-2 px-4">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative w-full h-64">
                 <Image

@@ -39,54 +39,58 @@ export default function WhyWork() {
 
   return (
     <section className="px-4 py-12" style={{ backgroundColor: "#f9f9f9" }}>
-      <h2 
-        className="font-semibold text-left sm:text-center mb-10 sm:pt-0" 
-        style={{ color: "#333", fontSize: "clamp(1.2rem, 2.5vw, 1.75rem)" , fontWeight:"400" }}
-      >
+      <h2 className="text-[22px] sm:text-xl md:text-2xl lg:text-[2.5rem] font-normal mb-2 text-[#222] font-helvetica px-5">
         Why Work with JustCreativeDesigns?
       </h2>
 
       {/* First Row - 3 Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8">
-        {features.slice(0, 3).map((item, idx) => (
-          <div
-            key={idx}
-            className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition hover:shadow-md"
-            style={{ color: "black" }}
-          >
-            <div className="items-start space-x-3">
-              <div className="w-15 h-15 p-1 bg-pink-100 rounded-full flex items-center justify-center shrink-0">
-                <img src={item.icon} alt={item.title} className="w-15 h-15" />
-              </div>
-              <div>
-                <h3 className="text-lg mb-4" style={{fontFamily:"Helvetica Neue", fontSize:"24px"}}>{item.title}</h3>
-                <p className="text-sm text-gray-600" style={{fontFamily:"Helvetica Neue", fontSize:"18px"}}>{item.description}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+    {/* First Row - 3 Cards on Desktop, 1 Card per Row on Tablets/Mobile */}
+<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8 px-4">
+  {features.slice(0, 3).map((item, idx) => (
+    <div
+      key={idx}
+      className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition hover:shadow-md"
+      style={{ color: "black" }}
+    >
+      <div className="items-start space-x-3">
+        <div className="w-15 h-15 p-1 bg-pink-100 rounded-full flex items-center justify-center shrink-0">
+          <img src={item.icon} alt={item.title} className="w-15 h-15" />
+        </div>
+        <div>
+          <h3 className="text-base text-[18px]  sm:text-lg md:text-xl lg:text-[24px] mb-4 font-helvetica">
+  {item.title}
+</h3>
 
-      {/* Second Row - 2 Cards Centered */}
-      <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
-        {features.slice(3).map((item, idx) => (
-          <div
-            key={idx}
-            className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition hover:shadow-md w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
-            style={{ color: "black" }}
-          >
-            <div className="items-start space-x-3">
-              <div className="w-15 h-15 p-1 bg-pink-100 rounded-full flex items-center justify-center shrink-0">
-                <img src={item.icon} alt={item.title} className="w-15 h-15" />
-              </div>
-              <div>
-                <h3 className="text-lg mb-4" style={{fontFamily:"Helvetica Neue", fontSize:"24px"}}>{item.title}</h3>
-                <p className="text-sm text-gray-600" style={{fontFamily:"Helvetica Neue", fontSize:"18px"}}>{item.description}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+          <p className="text-sm text-gray-600" style={{fontFamily:"Helvetica Neue", fontSize:"18px"}}>{item.description}</p>
+        </div>
       </div>
+    </div>
+  ))}
+</div>
+
+{/* Second Row - 2 Cards on Desktop, 1 Card per Row on Tablets/Mobile */}
+<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto px-4">
+  {features.slice(3).map((item, idx) => (
+    <div
+      key={idx}
+      className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition hover:shadow-md"
+      style={{ color: "black" }}
+    >
+      <div className="items-start space-x-3">
+        <div className="w-15 h-15 p-1 bg-pink-100 rounded-full flex items-center justify-center shrink-0">
+          <img src={item.icon} alt={item.title} className="w-15 h-15" />
+        </div>
+        <div>
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-[24px] mb-4 font-helvetica">
+  {item.title}
+</h3>
+          <p className="text-sm text-gray-600" style={{fontFamily:"Helvetica Neue", fontSize:"18px"}}>{item.description}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
 
     </section>
   );

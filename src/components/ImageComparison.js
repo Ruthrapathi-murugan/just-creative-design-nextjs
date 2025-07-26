@@ -7,19 +7,15 @@ const CompareImage = dynamic(() => import('react-compare-image'), { ssr: false }
 
 export default function ImageComparison() {
   return (
-    <div className="min-h-screen flex flex-col justify-center bg-white px-6 py-16 pb-0 md:pb-0" style={{
-      padding: "40px 40px"
-    }}>
+    <div className="min-h-screen flex flex-col justify-center bg-white px-6 py-16 pb-0 md:pb-0" >
     
-      <h1
-        className="text-4xl font-bold mb-4 md:text-xl"
-        style={{ color: "#333", display: "flex", flexDirection: "initial", fontWeight:"400" }}
-      >
-        Design That Understands You
-      </h1>
+ <h1 className="text-[22px] font-bold sm:text-xl py-4 md:text-2xl lg:text-[2.5rem] font-normal mb-2 text-[#222] font-helvetica px-4" >
+  Design That Understands You
+</h1>
+
       
 
-      <p className="text-base sm:text-lg text-gray-600 mb-9">
+      <p className="text-base sm:text-lg text-gray-600 mb-9 px-4">
         We believe that outstanding rooms are more than just visually appealing;
         they also resonate with their owners. That's why our interior designers
         spend time learning about your habits, tastes, and needs before

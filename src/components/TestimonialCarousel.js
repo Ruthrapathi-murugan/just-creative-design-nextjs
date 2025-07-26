@@ -81,7 +81,9 @@ export default function TestimonialCarousel() {
   </button>
 
   {/* Image Section */}
-  <div className="relative w-1/2 min-w-[150px] aspect-[3/4] p-2">
+  {/* Image Section */}
+<div className="flex flex-col items-center w-1/3 min-w-[150px] p-4">
+  <div className="relative w-full aspect-[2/3]">
     <Image
       src={testimonial.image}
       alt={testimonial.name}
@@ -89,11 +91,15 @@ export default function TestimonialCarousel() {
       className="rounded-lg object-cover"
       sizes="(max-width: 768px) 50vw, 300px"
     />
-    <h4 className="font-medium mt-4 text-black text-center text-sm sm:text-base">{testimonial.name}</h4>
   </div>
+  <h4 className="font-medium mt-4 text-black text-center text-sm sm:text-base">
+    {testimonial.name}
+  </h4>
+</div>
+
 
   {/* Text Section */}
-  <div className="w-1/2 min-w-[150px] p-2 text-left">
+  <div className="w-1/2 min-w-[150px] p-2 text-center">
     <p className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg">
   {testimonial.text}
 </p>
@@ -103,6 +109,7 @@ export default function TestimonialCarousel() {
 
               </SwiperSlide>
             ))}
+          
           </Swiper>
         </div>
       </section>

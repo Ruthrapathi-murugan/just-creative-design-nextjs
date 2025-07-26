@@ -8,7 +8,7 @@ const services = [
     buttonText: "Discover more",
   },
   {
-    title: " Your Perfect Wardrobe Design,Tailored by Us",
+    title: " Your Perfect Wardrobe,Tailored by Us",
     description: "From luxurious walk-ins to sleek storage solutions, see how we can make your wardrobe dreams a reality.",
     image: "./slider2.jpg",
     buttonText: "Discover more",
@@ -27,8 +27,8 @@ export default function ServiceCards() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6" style={{backgroundColor:"white" , padding:"30px",paddingTop:"50px"}}>
       {services.map((service, index) => (
         <div key={index} className="border rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-2xl text-center font-semibold mb-2" style={{color:"black",padding:"10px"}}>{service.title}</h3>
-          <img src={service.image} alt={service.title} className="w-full h-62 object-cover" />
+          <h3 className="text-xl text-center mb-2 px-4 py-4" style={{color:"black"}}>{service.title}</h3>
+          <img src={service.image} alt={service.title} className="w-full h-60 object-cover" />
           <div className="p-4 flex flex-col justify-between flex-1">
             <p className="text-gray-600 mb-4">{service.description}</p>
             <button className="mt-auto border border-gray-800 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-100 transition">

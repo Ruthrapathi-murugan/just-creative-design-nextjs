@@ -58,23 +58,27 @@ export default function FAQAccordion() {
   };
  
   return (
-    <div className="bg-gray-50 text-gray-800"style={{ backgroundColor: 'white',color: 'black' }}>
+    <div className="bg-gray-50 text-gray-800 px-6"style={{ backgroundColor: 'white',color: 'black' }}>
     <section className="max-w-6xl mx-auto px-4 py-16" style={{ backgroundColor: 'white',color: 'black' }}>
       <h2 className="text-4xl font-semibold mb-8 " >FAQ</h2>
       <div className="space-y-3">
         {faqData.map((item, index) => (
           <div key={index} className="border border-gray-200 rounded-lg">
-            <button
-              onClick={() => toggleAccordion(index)}
-              className="w-full flex justify-between items-center p-4 text-left"
-            >
-              <span className="text-lg font-medium">{item.question}</span>
-              <ChevronDown
-                className={`transition-transform duration-300 ${
-                  activeIndex === index ? 'rotate-180' : ''
-                }`}
-              />
-            </button>
+           <button
+  onClick={() => toggleAccordion(index)}
+  className="w-full flex justify-between items-center p-4 text-left"
+>
+  <span className="text-base sm:text-lg font-medium flex-1 pr-4">
+    {item.question}
+  </span>
+  <ChevronDown
+    size={20} // Force icon size (increase if needed)
+    className={`flex-shrink-0 transition-transform duration-300 ${
+      activeIndex === index ? 'rotate-180' : ''
+    }`}
+  />
+</button>
+
             {activeIndex === index && (
               <div className="p-4 border-t text-gray-600 bg-gray-50">{item.answer}</div>
             )}

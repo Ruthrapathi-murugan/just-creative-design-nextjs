@@ -28,7 +28,7 @@ export default function WhoWeDesignFor() {
   ];
 
   return (
-    <section className="py-10 px-4 sm:py-14 sm:px-6 bg-white text-gray-800">
+    <section className="py-1 px-4 sm:py-14 sm:px-6 bg-white text-gray-800 lg:px-8" >
       <h2 className="text-2xl sm:text-3xl font-semibold mb-6">Who We Design For</h2>
       <p className="text-base sm:text-lg text-gray-600 mb-10 text-justify">
         At Just Creative Designs, we understand that every home tells a different story. That’s why our interior
