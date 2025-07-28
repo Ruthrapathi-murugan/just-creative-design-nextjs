@@ -1,9 +1,8 @@
 'use client'
-import { useState } from 'react';
-import { ChevronDown, Menu, X } from 'lucide-react';
+
 
 // components/WhyWork.js
-export default function WhyWork() {
+export default function whywork() {
   const features = [
     {
       title: "Proven expertise",

@@ -21,7 +21,7 @@ const services = [
   },
 ];
 
-export default function ServiceCards() {
+export default function servicecards() {
   return (
     <>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6" style={{backgroundColor:"white" , padding:"30px",paddingTop:"50px"}}>

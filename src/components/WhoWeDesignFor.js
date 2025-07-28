@@ -1,4 +1,4 @@
-export default function WhoWeDesignFor() {
+export default function whowedesignfor() {
   const categories = [
     {
       title: "New Homeowners",

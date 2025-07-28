@@ -50,7 +50,7 @@ const faqData = [
   },
 ];
 
-export default function FAQAccordion() {
+export default function faqaccordion() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
