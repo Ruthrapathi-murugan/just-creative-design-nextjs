@@ -12,7 +12,7 @@ import WhyWork from '@/components/WhyWork';
   
   export default function Home(){
     return <>
-<ImageSlider/>
+{/* <ImageSlider/>
         <IntroSection/>
         <Services/>
       <WhyWork/>
@@ -21,7 +21,7 @@ import WhyWork from '@/components/WhyWork';
        <TailoredDesign/>
      <ServiceCards/>
        <TestimonialCarousel/>
-       <FAQAccordion/>
+       <FAQAccordion/> */}
     
     </>
   }
