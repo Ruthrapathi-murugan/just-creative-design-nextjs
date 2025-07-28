@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import styles from "./imageslider.module.css";
+import styles from "./ImageSlider.module.css";
 
 const images = [
   "/slider3.jpg",

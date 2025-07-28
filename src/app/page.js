@@ -1,23 +1,25 @@
 'use client '
-import FAQAccordion from "@/components/faqaccordion"
-import ImageComparison from "@/components/imagecomparison"
-import ImageSlider from "@/components/imageslider"
-import IntroSection from "@/components/introsection"
-import ServiceCards from "@/components/servicecards"
-import Services from "@/components/services"
-import TailoredDesign from "@/components/tailoreddesign"
-import TestimonialCarousel from "@/components/testimonialcarousel"
-import WhoWeDesignFor from "@/components/whowedesignfor"
-import WhyWork from "@/components/whywork"
 
-
-
+import ImageSlider from "@/components/ImageSlider"
+import IntroSection from "@/components/IntroSection"
+import Services from "@/components/Services"
+import WhyWork from "@/components/WhyWork"
+import ImageComparison from "@/components/ImageComparison"
+import WhoWeDesignFor from "@/components/WhoWeDesignFor"
+import TailoredDesign from "@/components/TailoredDesign"  
+import ServiceCards from "@/components/ServiceCards"
+import TestimonialCarousel from "@/components/TestimonialCarousel"
+import FAQAccordion from "@/components/FAQAccordion"
   
 
-  
+
+
   export default function Home(){
     return <>
-   <ImageSlider/>
+    
+     <ImageSlider/>
+    <IntroSection/>
+<ImageSlider/>
 <IntroSection/>
    <Services/>
    <WhyWork/>
@@ -26,7 +28,7 @@ import WhyWork from "@/components/whywork"
    <TailoredDesign/>
    <ServiceCards/>
    <TestimonialCarousel/>
-   <FAQAccordion/>
+   <FAQAccordion/> 
   
     
     </>
