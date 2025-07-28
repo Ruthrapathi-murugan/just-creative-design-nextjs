@@ -2,7 +2,7 @@
 import Marquee from "react-fast-marquee";
 
 
-export default function tailoreddesign() {
+export default function TailoredDesign() {
   return (
     <>
     <section className="bg-white text-gray-800 px-4 py-10" >

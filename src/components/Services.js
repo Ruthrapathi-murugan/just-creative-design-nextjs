@@ -35,7 +35,7 @@ const services = [
   },
 ];
 
-export default function services() {
+export default function Services() {
   const settings = {
     dots: true,
     infinite: false,

@@ -2,7 +2,7 @@
 
 
 // components/WhyWork.js
-export default function whywork() {
+export default function WhyWork() {
   const features = [
     {
       title: "Proven expertise",

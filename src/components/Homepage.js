@@ -10,7 +10,7 @@ import ServiceCards from '@/components/ServiceCards';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import FAQAccordion from '@/components/FAQAccordion';
 
-export default function hompage() {
+export default function Hompage() {
   return (
     <>
       <ImageSlider />

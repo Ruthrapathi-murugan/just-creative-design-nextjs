@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-export default function footer() {
+export default function Footer() {
   return (
     <footer className="bg-white border-t text-[8px] sm:text-xs md:text-sm">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-6 flex flex-wrap items-start justify-between gap-y-6">

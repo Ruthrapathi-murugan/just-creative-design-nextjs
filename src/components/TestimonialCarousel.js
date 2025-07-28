@@ -27,7 +27,7 @@ const testimonials = [
   },
 ];
 
-export default function testimonialcarousel() {
+export default function TestimonialCarousel() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [swiperInstance, setSwiperInstance] = useState(null);

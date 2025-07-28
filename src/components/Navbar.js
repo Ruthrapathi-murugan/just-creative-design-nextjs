@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
-export default function navbar() {
+export default function Navbar() {
   const [openPrice, setOpenPrice] = useState(false);
   const [openService, setOpenService] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

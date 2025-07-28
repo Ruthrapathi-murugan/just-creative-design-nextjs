@@ -16,7 +16,7 @@ function CustomHandle() {
   );
 }
 
-export default function imagecomparison() {
+export default function ImageComparison() {
   useEffect(() => {
     const imgs = document.querySelectorAll('.ReactCompareImage img');
     imgs.forEach((img) => {
