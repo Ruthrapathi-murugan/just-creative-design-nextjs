@@ -1,6 +1,6 @@
 // app/layout.js
-import Navbar from '@/components/Shared/Navbar';
-import Footer from '@/components/Shared/Footer';
+import Navbar from '@/components/Shared/Navbar.js';
+import Footer from '@/components/Shared/Footer.js';
 import './globals.css'
 
 

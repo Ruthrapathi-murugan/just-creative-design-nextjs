@@ -1,5 +1,5 @@
 "use client";
-import styles from "./introsection.module.css";
+import styles from "./IntroSection.module.css";
 
 export default function IntroSection() {
   return (
