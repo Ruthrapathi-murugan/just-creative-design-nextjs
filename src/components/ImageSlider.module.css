@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   background-color: white;
+  
 }
 
 /* Slider holds the image */
@@ -13,6 +14,7 @@
   width: 100%;
   height: 100svh; /* Full screen height */
   position: relative;
+ 
 }
 
 /* The image fits perfectly */

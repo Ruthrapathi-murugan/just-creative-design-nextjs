@@ -9,7 +9,7 @@ export default function TailoredDesign() {
          <h2 className="text-[16px]  sm:text-xl md:text-2xl lg:text-[2rem] font-bold sm:font-semibold lg:font-normal mb-2 text-[#222] font-helvetica px-4">
   Tailored Design Solutions For Every Corner Of Your Home
 </h2>
- <p className="text-[12px] md:text-[18px] lg:text-[24px] text-gray-600 text-left px-4">
+ <p className="text-[18px] text-base sm:text-lg md:text-2xl lg:text-2xl text-gray-600 mb-9 px-4">
           From the first sketch to the final touch, our expert team ensures your vision is brought to life with beautifully-designed,
           functional spaces that you’ll love coming home to every day.
         </p>

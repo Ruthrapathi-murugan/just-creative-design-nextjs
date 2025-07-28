@@ -29,8 +29,8 @@ export default function WhoWeDesignFor() {
 
   return (
     <section className="py-1 px-4 sm:py-14 sm:px-6 bg-white text-gray-800 lg:px-8" >
-      <h2 className="text-2xl sm:text-3xl mb-6 text-[#222] font-helvetica ">Who We Design For</h2>
-      <p className="text-base sm:text-lg text-gray-600 mb-10 text-justify">
+      <h2 className="text-2xl sm:text-3xl mb-6 text-[#222] font-helvetica px-4">Who We Design For</h2>
+      <p className="text-[18px] text-base sm:text-lg md:text-2xl lg:text-2xl text-gray-600 mb-9 px-4">
         At Just Creative Designs, we understand that every home tells a different story. That’s why our interior
         design services are tailored to fit different needs, styles, and stages of life:
       </p>
@@ -46,7 +46,7 @@ export default function WhoWeDesignFor() {
               <div className="mb-4 bg-rose-100 p-2 rounded-full">
                 <img src={cat.icon} alt={`${cat.title} icon`} className="w-14 h-14 object-cover rounded-full" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-3">{cat.title}</h3>
+              <h3 className="text-lg sm:text-xl  mb-3">{cat.title}</h3>
               <p className="text-sm sm:text-base text-gray-600">{cat.desc}</p>
             </div>
           ))}

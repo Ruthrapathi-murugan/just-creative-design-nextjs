@@ -62,7 +62,7 @@ export default function Navbar() {
             )}
           </li>
 
-          <li><Link href="/material" className="hover:text-gray-600">Material</Link></li>
+          <li><Link href="/material" className="hover:text-gray-600">Blogs</Link></li>
           <li><Link href="/about" className="hover:text-gray-600">About</Link></li>
           <li><Link href="/contact" className="hover:text-gray-600">Contact Us</Link></li>
         </ul>
@@ -122,7 +122,7 @@ export default function Navbar() {
             )}
           </li>
 
-          <li><Link href="/material" className="block hover:text-gray-600">Material</Link></li>
+          <li><Link href="/material" className="block hover:text-gray-600">Blogs</Link></li>
           <li><Link href="/about" className="block hover:text-gray-600">About</Link></li>
           <li><Link href="/contact" className="block hover:text-gray-600">Contact Us</Link></li>
         </ul>

@@ -20,7 +20,7 @@ export default function IntroSection() {
             <br></br>
             We are based in Bangalore and specialize in home interior design
             that blends aesthetics and usability. Only smart designs that feel
-            cozy, homey, and totally. you.
+            cozy, homey, and totally you.
           </span>
         </p>
         <div className={styles.buttons}>

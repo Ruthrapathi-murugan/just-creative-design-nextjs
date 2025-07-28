@@ -9,31 +9,31 @@ export default function WhyWork() {
       title: "Proven expertise",
       description:
         "With a seasoned staff and over 10 years of expertise, our designers pair beauty with purpose, so every corner serves you well and still looks amazing.",
-      icon: "./expertise.png",
+      icon: "./3.png",
     },
     {
       title: "Complete Project Management",
       description:
         "From design to setting up, we handle the entire process—planning, sourcing, and execution—so you don’t have to chase vendors or compromise on quality.",
-      icon: "./project-management.png",
+      icon: "./2.png",
     },
     {
       title: "On-Time Project Delivery",
       description:
         "We respect your time. Deadlines are not suggestions; they are commitments. We always deliver on time.",
-      icon: "./delivery.png",
+      icon: "./1.png",
     },
     {
       title: "Quality that Lasts",
       description:
         "We exclusively use high-quality materials and ensure that our work will look great for years.",
-      icon: "./quality.png",
+      icon: "./4.png",
     },
     {
       title: "Free Design Consultation",
       description:
         "Not sure where to start? Chat with us for free and without obligation. We will walk you through the options, timelines, and costs before you make a decision.",
-      icon: "./consultation.png",
+      icon: "./5.png",
     },
   ];
 
@@ -54,10 +54,10 @@ export default function WhyWork() {
     >
       <div className="items-start space-x-3">
         <div className="w-15 h-15 p-1 bg-pink-100 rounded-full flex items-center justify-center shrink-0">
-          <img src={item.icon} alt={item.title} className="w-15 h-15" />
+          <img src={item.icon} alt={item.title} className="w-208h-18" />
         </div>
         <div>
-          <h3 className="text-lg sm:text-xl font-semibold mb-3 px-2 py-2">
+          <h3 className="text-lg sm:text-xl mb-3 px-2 py-2">
   {item.title}
 </h3>
 
@@ -79,10 +79,10 @@ export default function WhyWork() {
     >
       <div className="items-start space-x-3">
         <div className="w-15 h-15 p-1 bg-pink-100 rounded-full flex items-center justify-center shrink-0">
-          <img src={item.icon} alt={item.title} className="w-15 h-15" />
+          <img src={item.icon} alt={item.title} className="w-20 h-15" />
         </div>
         <div>
-          <h3 className="text-lg sm:text-xl font-semibold mb-3 px-2 py-2">
+          <h3 className="text-lg sm:text-xl  mb-3 px-2 py-2">
   {item.title}
 </h3>
           <p className="text-sm sm:text-base text-gray-600 px-2 ">{item.description}</p>

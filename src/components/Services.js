@@ -65,11 +65,11 @@ export default function Services() {
     <section className="px-4 py-12 border-t border-gray-300" style={{ backgroundColor: "white"}}>
 
       <div className="b-8">
-<h2 className="text-[24px] sm:text-xl md:text-2xl lg:text-[2.5rem] font-normal mb-2 text-[#222] font-helvetica px-4">
+<h2 className="text-[24px] sm:text-xl md:text-3xl lg:text-[2.5rem] font-normal mb-2 text-[#222] font-helvetica px-4">
   Service We Offer
 </h2>
 
-        <p className="text-base sm:text-lg text-gray-600 mb-9 px-4">
+        <p className=" text-[18px] text-base sm:text-lg md:text-2xl lg:text-2xl text-gray-600 mb-9 px-4">
           We create smart, attractive places that are actually functional for everyday living—
           whether you require additional storage, eye-catching decorations or a smooth flow
           throughout your house.

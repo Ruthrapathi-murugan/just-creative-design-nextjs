@@ -48,7 +48,7 @@ export default function TestimonialCarousel() {
         <h2 className="text-xl sm:text-2xl lg:text-[40px] text-left mb-2 px-4" style={{ color: 'black' }}>
           Trusted by 100+ homeowners just like you
         </h2>
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl text-left mb-6 px-4">
+        <p className="text-[18px] text-base sm:text-lg md:text-2xl lg:text-2xl text-left text-gray-600 mb-9 px-4">
           Don’t just take our word for it—hear from the clients whose homes we’ve transformed.
         </p>
 

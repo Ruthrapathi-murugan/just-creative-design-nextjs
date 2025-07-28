@@ -27,14 +27,13 @@ export default function ImageComparison() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center bg-white px-4 pb-0">
+    <div className="min-h-screen flex flex-col justify-center bg-white px-3 py-4 pb-0">
       <h1 className="text-2xl sm:text-3xl md:text-2xl lg:text-[2.5rem] mb-2 text-[#222] font-helvetica px-4 py-0">
         Design That Understands You
       </h1>
 
-      <p className="text-base sm:text-lg text-gray-600 mb-9 px-4">
-        We believe that outstanding rooms are more than just visually appealing;
-        they also resonate with their owners...
+      <p className="text-[18px] text-base sm:text-lg md:text-2xl lg:text-2xl text-gray-600 mb-9 px-4">
+     We believe that outstanding rooms are more than just visually appealing; they also resonate with their owners. That's why our interior designers spend time learning about your habits, tastes, and needs before sketching a single concept.  We can bring it all together, whether you choose modern interior design, the simplicity of minimalist interior design, or something comfortable yet contemporary. Every project we handle is unique because it is designed around what is most important to you.
       </p>
 
       <div className="w-full max-w-5xl mx-auto text-center rounded-md overflow-hidden shadow-md">
