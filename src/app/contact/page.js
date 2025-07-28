@@ -1,4 +1,5 @@
 // app/contact/page.js
+'use client '
 
 import ContactSection from "@/components/Contactpage/ContactSection";
 
