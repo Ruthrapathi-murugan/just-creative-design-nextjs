@@ -2,7 +2,7 @@
 import FAQAccordion from "@/components/faqaccordion"
 import ImageComparison from "@/components/imagecomparison"
 import ImageSlider from "@/components/imageslider"
-import IntroSection from "@/components/introSection"
+import IntroSection from "@/components/introsection"
 import ServiceCards from "@/components/servicecards"
 import Services from "@/components/services"
 import TailoredDesign from "@/components/tailoreddesign"
@@ -18,7 +18,7 @@ import WhyWork from "@/components/whywork"
   export default function Home(){
     return <>
    <ImageSlider/>
-   <IntroSection/>
+ <IntroSection/>
    <Services/>
    <WhyWork/>
    <ImageComparison/>
