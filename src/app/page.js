@@ -9,11 +9,6 @@ import TailoredDesign from "@/components/tailoreddesign"
 import TestimonialCarousel from "@/components/testimonialcarousel"
 import WhoWeDesignFor from "@/components/whowedesignfor"
 import WhyWork from "@/components/whywork"
-
-
-
-  
-
   
   export default function Home(){
     return <>
