@@ -1,8 +1,8 @@
 // app/layout.js
+import Navbar from '@/components/Shared/Navbar';
+import Footer from '@/components/Shared/Footer';
 import './globals.css'
-import Navbar from '../components/navbar'
 
-import Footer from '@/components/footer';
 
 
 
@@ -29,9 +29,9 @@ export default function RootLayout({ children }) {
     
       </head>
        <body>
-        <Navbar />
+    <Navbar/>
         <main>{children}</main>
-        <Footer />
+     <Footer/>
       </body>
     </html>
   );
