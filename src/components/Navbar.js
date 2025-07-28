@@ -1,7 +1,5 @@
 'use client';
 
-
-
 import { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import Link from 'next/link';
@@ -12,66 +10,65 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md" style={{padding:"0px 0px 0px 0px",margin:"0px 0px 0px 0px"}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+    <nav className="bg-white border-b border-gray-300 font-normal text-[18px] leading-[120%] tracking-[-0.02em]">
+      <div className="max-w-[1280px] mx-auto flex justify-between items-center h-[67px] px-4 sm:px-4 md:px-4 lg:px-4">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <Link href="/">
-          <img src="/Logo.png" alt="Logo" className="h-10 w-auto"  style={{height:"48px",width:"90px"}}/>
-          </Link>
-        </div>
+        <Link href="/">
+          <img src="/Logo.png" alt="Logo" className="h-12 w-auto" />
+        </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 font-medium" style={{color:"black",fontSize:"18px"}}>
-          <li><a href="#" className="hover:text-gray-600">Project</a></li>
+        <ul className="hidden md:flex space-x-6 font-medium text-black text-[18px]">
+          <li><Link href="/project" className="hover:text-gray-600">Project</Link></li>
 
-        {/* Dropdown: Price Calculator */}
-<li className="relative">
-  <button
-    onClick={() => {
-      setOpenPrice(!openPrice);
-      setOpenService(false); // Close Service dropdown
-    }}
-    className="flex items-center gap-1 hover:text-gray-600"
-  >
-    Price Calculator <ChevronDown size={16} />
-  </button>
-  {openPrice && (
-    <ul className="absolute bg-white shadow-md p-2 mt-2 rounded z-10">
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Home Calculator</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Kitchen Calculator</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Wardrope Calculator</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Kids Calculator</a></li>
-    </ul>
-  )}
-</li>
+          {/* Price Dropdown */}
+          <li className="relative">
+            <button
+              onClick={() => {
+                setOpenPrice(!openPrice);
+                setOpenService(false);
+              }}
+              className="flex items-center gap-1 hover:text-gray-600"
+            >
+              Price Calculator <ChevronDown size={16} />
+            </button>
+            {openPrice && (
+              <ul className="absolute bg-white shadow-md p-2 mt-2 rounded z-10">
+                <li><Link href="/price/home-calculator" className="block px-4 py-2 hover:bg-gray-100">Home Calculator</Link></li>
+                <li><Link href="/price/kitchen-calculator" className="block px-4 py-2 hover:bg-gray-100">Kitchen Calculator</Link></li>
+                <li><Link href="/price/wardrobe-calculator" className="block px-4 py-2 hover:bg-gray-100">Wardrobe Calculator</Link></li>
+                <li><Link href="/price/kids-calculator" className="block px-4 py-2 hover:bg-gray-100">Kids Calculator</Link></li>
+              </ul>
+            )}
+          </li>
 
-{/* Dropdown: Service */}
-<li className="relative">
-  <button
-    onClick={() => {
-      setOpenService(!openService);
-      setOpenPrice(false); // Close Price dropdown
-    }}
-    className="flex items-center gap-1 hover:text-gray-600"
-  >
-    Service <ChevronDown size={16} />
-  </button>
-  {openService && (
-    <ul className="absolute bg-white shadow-md p-2 mt-2 rounded z-10">
-     <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Interior Design</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Consultation</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg   -gray-100">Renovation</a></li>
-    </ul>
-  )}
-</li>
-<li><a href="#" className="hover:text-gray-600">Material</a></li>
- <li><a href="#" className="hover:text-gray-600">About</a></li>
-          <li><a href="#" className="hover:text-gray-600">Contact us</a></li>
+          {/* Service Dropdown */}
+          <li className="relative">
+            <button
+              onClick={() => {
+                setOpenService(!openService);
+                setOpenPrice(false);
+              }}
+              className="flex items-center gap-1 hover:text-gray-600"
+            >
+              Service <ChevronDown size={16} />
+            </button>
+            {openService && (
+              <ul className="absolute bg-white shadow-md p-2 mt-2 rounded z-10">
+                <li><Link href="/services/kitchen" className="block px-4 py-2 hover:bg-gray-100">Kitchen</Link></li>
+                <li><Link href="/services/wardrobe" className="block px-4 py-2 hover:bg-gray-100">Wardrobe</Link></li>
+                <li><Link href="/services/kids" className="block px-4 py-2 hover:bg-gray-100">Kids</Link></li>
+              </ul>
+            )}
+          </li>
+
+          <li><Link href="/material" className="hover:text-gray-600">Material</Link></li>
+          <li><Link href="/about" className="hover:text-gray-600">About</Link></li>
+          <li><Link href="/contact" className="hover:text-gray-600">Contact Us</Link></li>
         </ul>
 
-        {/* Hamburger Button */}
-        <div className="md:hidden" style={{color:"black"}}>
+        {/* Mobile Menu Button */}
+        <div className="md:hidden text-black">
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -80,53 +77,54 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <ul className="md:hidden px-4 pb-4 space-y-2 font-medium bg-white shadow-md" style={{color:"black"}}>
-          <li><a href="#" className="block hover:text-gray-600">Home</a></li>
-          <li><a href="#" className="block hover:text-gray-600">Project</a></li>
+        <ul className="md:hidden px-4 pb-4 space-y-2 font-medium text-black bg-white shadow-md">
+          <li><Link href="/" className="block hover:text-gray-600">Home</Link></li>
+          <li><Link href="/project" className="block hover:text-gray-600">Project</Link></li>
 
-       {/* Price Dropdown */}
-<li>
-  <button
-    onClick={() => {
-      setOpenPrice(!openPrice);
-      setOpenService(false); // Close Service
-    }}
-    className="flex items-center justify-between w-full hover:text-gray-600"
-  >
-    Price Calculator <ChevronDown size={16} />
-  </button>
-  {openPrice && (
-    <ul className="pl-4">
-     <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Home Calculator</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg -gray-100">Kitchen Calculator</a></li>    
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Wardrope Calculator</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Kids Calculator</a></li> 
-    </ul>
-  )}
-</li>
+          {/* Mobile Price Dropdown */}
+          <li>
+            <button
+              onClick={() => {
+                setOpenPrice(!openPrice);
+                setOpenService(false);
+              }}
+              className="flex items-center justify-between w-full hover:text-gray-600"
+            >
+              Price Calculator <ChevronDown size={16} />
+            </button>
+            {openPrice && (
+              <ul className="pl-4">
+                <li><Link href="/price/home-calculator" className="block px-4 py-2 hover:bg-gray-100">Home Calculator</Link></li>
+                <li><Link href="/price/kitchen-calculator" className="block px-4 py-2 hover:bg-gray-100">Kitchen Calculator</Link></li>
+                <li><Link href="/price/wardrobe-calculator" className="block px-4 py-2 hover:bg-gray-100">Wardrobe Calculator</Link></li>
+                <li><Link href="/price/kids-calculator" className="block px-4 py-2 hover:bg-gray-100">Kids Calculator</Link></li>
+              </ul>
+            )}
+          </li>
 
-{/* Service Dropdown */}
-<li>
-  <button
-    onClick={() => {
-      setOpenService(!openService);
-      setOpenPrice(false); // Close Price
-    }}
-    className="flex items-center justify-between w-full hover:text-gray-600"
-  >
-    Service <ChevronDown size={16} />
-  </button>
-  {openService && (
-    <ul className="pl-4">
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Interior Design</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Consultation</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Renovation</a></li>
-    </ul>
-  )}
-</li>
+          {/* Mobile Service Dropdown */}
+          <li>
+            <button
+              onClick={() => {
+                setOpenService(!openService);
+                setOpenPrice(false);
+              }}
+              className="flex items-center justify-between w-full hover:text-gray-600"
+            >
+              Service <ChevronDown size={16} />
+            </button>
+            {openService && (
+              <ul className="pl-4">
+                <li><Link href="/services/kitchen" className="block px-4 py-2 hover:bg-gray-100">Kitchen</Link></li>
+                <li><Link href="/services/wardrobe" className="block px-4 py-2 hover:bg-gray-100">Wardrobe</Link></li>
+                <li><Link href="/services/kids" className="block px-4 py-2 hover:bg-gray-100">Kids</Link></li>
+              </ul>
+            )}
+          </li>
 
-
-          <li><a href="#" className="block hover:text-gray-600">Contact us</a></li>
+          <li><Link href="/material" className="block hover:text-gray-600">Material</Link></li>
+          <li><Link href="/about" className="block hover:text-gray-600">About</Link></li>
+          <li><Link href="/contact" className="block hover:text-gray-600">Contact Us</Link></li>
         </ul>
       )}
     </nav>

@@ -11,7 +11,7 @@ export default function IntroSection() {
           Bangalore
         </h6>
 
-        <p>
+        <p className="py-2">
           We’re your go‑to partner for designing a home that truly reflects you.
           Whether you're moving into a new home or refreshing an existing one,
           our goal is simple: provide elegant, functional, and personalised

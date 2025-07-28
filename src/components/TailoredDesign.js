@@ -6,20 +6,17 @@ export default function TailoredDesign() {
   return (
     <>
     <section className="bg-white text-gray-800 px-4 py-10" >
-         <h2 className="text-[19px] sm:text-xl md:text-2xl lg:text-[2rem] font-bold sm:font-semibold lg:font-normal mb-2 text-[#222] font-helvetica px-4">
+         <h2 className="text-[16px]  sm:text-xl md:text-2xl lg:text-[2rem] font-bold sm:font-semibold lg:font-normal mb-2 text-[#222] font-helvetica px-4">
   Tailored Design Solutions For Every Corner Of Your Home
 </h2>
- <p className="text-gray-600 text-left text-lg px-4">
+ <p className="text-[12px] md:text-[18px] lg:text-[24px] text-gray-600 text-left px-4">
           From the first sketch to the final touch, our expert team ensures your vision is brought to life with beautifully-designed,
           functional spaces that you’ll love coming home to every day.
         </p>
-      <div className="max-w-5xl mx-auto px-1 py-10" >
+      <div className="max-w-[90%] md:max-w-5xl lg:max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-10">
      
-
-       
-
         {/* Image */}
-        <div className="mt-10 rounded-md overflow-hidden shadow-md" >
+        <div className="rounded-md overflow-hidden shadow-md" >
           <img
             src="./slider3.jpg"
             alt="Beautiful interior space"

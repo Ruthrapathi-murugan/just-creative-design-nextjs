@@ -1,17 +1,9 @@
 // app/layout.js
 import './globals.css'
 import Navbar from '../components/Navbar'
-import ImageSlider from '@/components/ImageSlider';
-import IntroSection from '@/components/IntroSection';
-import Services from '@/components/Services';
-import WhyWork from '@/components/WhyWork';
-import ImageComparison from '@/components/ImageComparison';
-import WhoWeDesignFor from '@/components/WhoWeDesignFor';
-import TailoredDesign from '@/components/TailoredDesign';
-import ServiceCards from '@/components/ServiceCards';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
-import FAQAccordion from '@/components/FAQAccordion';
+
 import Footer from '@/components/Footer';
+
 
 
 export default function RootLayout({ children }) {
@@ -36,20 +28,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
     
       </head>
-      <body>
+       <body>
         <Navbar />
-        <ImageSlider />
-        <IntroSection />
-        <Services />
-        <WhyWork />
-        <ImageComparison/>
-        <WhoWeDesignFor/>
-        <TailoredDesign />
-       <ServiceCards/>
-       <TestimonialCarousel/>
-       <FAQAccordion/>
-       <Footer/>
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -39,13 +39,13 @@ export default function WhyWork() {
 
   return (
     <section className="px-4 py-12" style={{ backgroundColor: "#f9f9f9" }}>
-      <h2 className="text-[22px] sm:text-xl md:text-2xl lg:text-[2.5rem] font-normal mb-2 text-[#222] font-helvetica px-5">
+      <h2 className="text-[22px] sm:text-2xl md:text-2xl lg:text-[2.5rem] font-normal mb-2 text-[#222] font-helvetica px-5">
         Why Work with JustCreativeDesigns?
       </h2>
 
       {/* First Row - 3 Cards */}
     {/* First Row - 3 Cards on Desktop, 1 Card per Row on Tablets/Mobile */}
-<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-9 px-4">
+<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10 px-4">
   {features.slice(0, 3).map((item, idx) => (
     <div
       key={idx}
@@ -69,7 +69,8 @@ export default function WhyWork() {
 </div>
 
 {/* Second Row - 2 Cards on Desktop, 1 Card per Row on Tablets/Mobile */}
-<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto px-4">
+<div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 max-w-3xl mx-auto px-4 ">
+
   {features.slice(3).map((item, idx) => (
     <div
       key={idx}
