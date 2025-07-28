@@ -18,7 +18,7 @@ import WhyWork from "@/components/whywork"
   export default function Home(){
     return <>
    <ImageSlider/>
- <IntroSection/>
+<IntroSection/>
    <Services/>
    <WhyWork/>
    <ImageComparison/>
