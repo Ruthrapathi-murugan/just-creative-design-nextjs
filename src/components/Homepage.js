@@ -1,14 +1,14 @@
  'use client ';
-import ImageSlider from '@/components/ImageSlider';
-import IntroSection from '@/components/IntroSection';
-import Services from '@/components/Services';
-import WhyWork from '@/components/WhyWork';
-import ImageComparison from '@/components/ImageComparison';
-import WhoWeDesignFor from '@/components/WhoWeDesignFor';
-import TailoredDesign from '@/components/TailoredDesign';
-import ServiceCards from '@/components/ServiceCards';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
-import FAQAccordion from '@/components/FAQAccordion';
+import ImageSlider from '@/components/imageslider';
+import IntroSection from '@/components/introsection';
+import Services from '@/components/services';
+import WhyWork from '@/components/whywork';
+import ImageComparison from '@/components/imagecomparison';
+import WhoWeDesignFor from '@/components/whowedesignfor';
+import TailoredDesign from '@/components/tailoreddesign';
+import ServiceCards from '@/components/servicecards';
+import TestimonialCarousel from '@/components/testimonialcarousel';
+import FAQAccordion from '@/components/faqaccordion';
 
 export default function Hompage() {
   return (
